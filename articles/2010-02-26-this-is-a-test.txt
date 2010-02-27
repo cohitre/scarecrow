@@ -1,0 +1,6 @@
+--- 
+title: This is a test
+date: 26/02/2010
+
+Once upon a time...
+
