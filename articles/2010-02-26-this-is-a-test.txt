@@ -1,6 +1,5 @@
 --- 
 title: This is a test
-date: 26/02/2010
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie sem sit amet tortor sodales malesuada. Aenean pharetra, leo nec blandit laoreet, felis lacus mollis nulla, tincidunt interdum libero tortor et massa. Aenean varius, dui sed vehicula pretium, nibh nisl sodales tortor, in tempus sapien leo eu velit. Aenean cursus magna eu dolor eleifend ac vehicula nisi laoreet. Praesent eu nunc erat, id facilisis lacus. Maecenas varius massa ac lectus congue porta. Integer at lorem a nisl gravida pellentesque. Pellentesque sit amet mauris velit, eget viverra arcu. Suspendisse potenti. Ut pulvinar velit vitae felis vulputate sed scelerisque mi malesuada. Nunc placerat, velit ac euismod scelerisque, dui massa accumsan magna, non commodo ligula nibh eu magna. Sed dolor risus, ultrices at rutrum vel, dictum vitae arcu. 
 

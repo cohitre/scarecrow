@@ -1,0 +1,8 @@
+%h1= @path
+%ul
+  - if archives.length > 0
+    - archives.each do |entry|
+      %li
+        %a{:href=>entry.path}= entry.title
+  - else
+    There are no articles for this date.
