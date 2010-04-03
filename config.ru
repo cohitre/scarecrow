@@ -1,4 +1,4 @@
-
+require 'haml'
 require 'toto'
 
 # Rack config
@@ -10,7 +10,7 @@ if ENV['RACK_ENV'] == 'development'
   require 'sass/plugin/rack'
   use Sass::Plugin::Rack
 
-  Sass::Plugin.options[:css_location] = "./public/css" 
+  Sass::Plugin.options[:css_location] = "./public/css"
 end
 
 #
@@ -20,7 +20,7 @@ toto = Toto::Server.new do
   #
   # Add your settings here
   # set [:setting], [value]
-  # 
+  #
   # set :author,    ENV['USER']                               # blog author
   # set :title,     Dir.pwd.split('/').last                   # site title
   # set :root,      "index"                                   # page to load on /
@@ -32,8 +32,9 @@ toto = Toto::Server.new do
   # set :cache,      28800                                    # cache duration, in seconds
 
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  set :to_html, lambda {|path, page, ctx|
+    ::Haml::Engine.new(File.read("#{path}/#{page}.haml"), :format => :html5).render(ctx)
+  }
 end
 
 run toto
-
-

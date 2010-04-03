@@ -1,0 +1,10 @@
+%ul#articles
+  - articles[0...3].each do |article|
+    %li.post
+      .header
+        %h1
+          %a{:href=>article.path}= article.title
+        %span.date= article.date
+      .content= article.summary
+      .more
+        %a{:ref => article.path} read on &raquo;
